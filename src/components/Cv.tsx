@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import * as pdfjsLib from "pdfjs-dist";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 // Use the correct versioned CDN
 pdfjsLib.GlobalWorkerOptions.workerSrc =
@@ -33,16 +35,19 @@ const DownloadCV: React.FC = () => {
     <div className="max-w-4xl mx-auto p-6">
       <div className="text-center mb-8">
         <a href="/LukesCv.pdf" download className="btn btn-outline-primary">
-          📄 Download My CV
-        </a>
+        📄 Download My CV
+      </a>
       </div>
-      
-      <div className="bg-white shadow-lg rounded-lg p-8">
+      <div>
+
+
+      </div>
+      {/* <div className="bg-white shadow-lg rounded-lg p-8">
         <h4 className="text-xl font-bold mb-4">CV Text Preview:</h4>
         <div className="whitespace-pre-wrap text-sm leading-relaxed text-gray-700 font-mono">
           {text}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
