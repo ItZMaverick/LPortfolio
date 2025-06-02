@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.6",
+    "pdf-ts": "^0.0.2",
+    "pdfjs-dist": "^3.4.120",
     "react": "^19.1.0",
     "react-bootstrap": "^2.10.10",
     "react-bootstrap-icons": "^1.11.6",
